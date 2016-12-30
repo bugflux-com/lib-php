@@ -1,0 +1,29 @@
+{
+    "name": "bugflux/bugflux",
+    "description": "Bugflux reporting library for PHP",
+    "type": "library",
+    "keywords": ["bugflux", "reporting", "report", "crash", "exception", "send"],
+    "homepage": "http://bugflux.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wojciech Mleczek",
+            "email": "mleczek.wojtek@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "files": ["src/helpers.php"],
+        "psr-4": {
+            "Bugflux\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bugflux\\Tests\\": "tests/"
+        }
+    }
+}
